@@ -262,11 +262,13 @@ export default function page() {
               item: { src: string; title: string; price: number },
               index: number
             ) => (
-              <NewProductCard
+            <div key={index}>
+                <NewProductCard
                 src={item.src}
                 title={item.title}
                 price={item.price}
               />
+            </div>
             )
           )}
         </div>

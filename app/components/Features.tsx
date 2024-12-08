@@ -34,13 +34,15 @@ const Features = () => {
 
       {/* Cards Container */}
       <div className="flex flex-wrap md:flex-nowrap items-center gap-5 justify-start md:justify-around mt-8">
-        {featureCardDetails.map((featureCard, index) => (
-          <FeaturesCard
+        {featureCardDetails.map((featureCard, index: number) => (
+       <div key={index}>
+           <FeaturesCard 
             heading={featureCard.heading}
             text={featureCard.text}
             iconPath={featureCard.iconPath}
             key={index}
           />
+       </div>
         ))}
       </div>
     </section>
