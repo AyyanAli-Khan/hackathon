@@ -1,29 +1,3 @@
-// import React from 'react'
-
-// export default function Signup() {
-//   return (
-//     <div className='w-full mt-4 h-[481px]  flex items-center gap-7 md:gap-[72px] flex-col px-6 py-6 md:py-[68px]'>
-//         <div className='text-primary h-26 w-3/4 flex items-center
-//         justify-between gap-[20px] flex-col
-//         '>
-//             <h1 className='text-h1 text-primary font-clash font-[300]'>
-//                 Join the club and get the benefits</h1>
-//             <p className='text-h5 w-[40%] text-center font-satoshi'>Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
-//         </div>
-
-//         <div className='h-[56px] w-[472px]'>
-//             <input type="text" className='border-none h-full  w-[80%]' placeholder='your@gmail.com'  />
-//             <button className='bg-primary font-satoshi font-[200] text-white h-full w-[20%] text-h5'>
-//                 Sign up
-//             </button>
-
-//         </div>
-//     </div>
-//   )
-// }
-
-
-
 import React from 'react';
 
 export default function Signup() {

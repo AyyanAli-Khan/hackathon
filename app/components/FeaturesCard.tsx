@@ -1,29 +1,3 @@
-// import React from 'react'
-
-
-// interface PROPS {
-//     heading: string,
-//     text: string,
-//     iconPath: string
-// }
-
-// const FeaturesCard = ({heading , text , iconPath}: PROPS) => {
-//   return (
-//     <div className='text-primary mt-12 flex flex-col justify-between  w-62 h-32'>
-//       <img src={iconPath} alt='icon' height={24}
-//       width={24} />
-
-//       <p className='text-h3 font-clash font-[200]'>{heading}</p>
-
-//       <p className='text-h5'>{text}</p>
-//     </div>
-//   )
-// }
-
-// export default FeaturesCard
-
-
-
 import React from "react";
 
 interface PROPS {

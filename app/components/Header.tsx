@@ -1,75 +1,10 @@
 "use client";
-// import { Search } from 'lucide-react'
-// import React from 'react'
-// import Image from 'next/image'
-
-// const Header = () => {
-
-//     const navLinks = [
-//         {
-//         name:"Plant pots",
-//     },
-//         {
-//         name:"Ceramics",
-//     },
-//         {
-//         name:"Tables",
-//     },
-
-//     {
-//         name:"Chairs",
-//     },
-
-//     {
-//         name:"Crockery",
-//     },
-
-//     {
-//         name:"Tableware",
-//     },
-//     {
-//         name:"Cutlery",
-//     },
-// ]
-
-//   return (
-//     <div className='w-full h-[132px] pt-[20px]  px-[20px] '>
-//         <div className='w-full h-1/2 pb-[20px]  flex justify-between items-center '>
-//             <Search height={20} width={20} className='cursor-pointer' />
-
-//             <h1 className='font-clash font-[400] text-h3 cursor-pointer '>Anino</h1>
-//             <div className='flex items-center   gap-6 '>
-//                 <Image className='cursor-pointer' src="/icons/shoping-cart.png" alt='shoping-cart' height={20} width={20}  />  
-//                 <Image className='cursor-pointer' src="/icons/user-avatar.png" alt='shoping-cart' height={20} width={20}  />  
-//             </div>
-//          </div>
-
-//          <hr />
-//         <div className='w-full h-1/2 pb-[20px] flex items-center pt-[20px] justify-center'>
-//             <div className='flex items-center gap-[40px]'>{
-//                navLinks.map((item: {name: string} , index: number)=>(
-//                 <h5 className='cursor-pointer text-h5 text-[#726E8D]'>{item.name}</h5>
-//                ) )
-//             }</div>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default Header
-
-
-
-
-
-
-
-"use client";
 
 import { Search, X } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Link from "next/link";
 
 const Header = () => {
   const navLinks = [
@@ -94,13 +29,16 @@ const Header = () => {
 
         {/* Right: Desktop Actions (Unchanged) */}
         <div className="hidden md:flex items-center gap-6">
-          <Image
+        <Link href='/cart'>
+        <Image
             className="cursor-pointer"
             src="/icons/shoping-cart.png"
             alt="shopping-cart"
             height={20}
             width={20}
           />
+        
+        </Link>
           <Image
             className="cursor-pointer"
             src="/icons/user-avatar.png"
