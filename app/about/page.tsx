@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -155,7 +155,7 @@ export default function Page() {
         </Button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2  px-6 py-4 md:px-20 md:py-[60px] gap-x-4 w-full h-[600px]">
+      <div className="grid grid-cols-1 md:grid-cols-2  px-6 py-4 md:px-20 md:py-[60px] gap-4 w-full h-[600px]">
         {/* text */}
         <div className="p-16 bg-primary flex flex-col  md:justify-between">
           <div className="text-white gap-3">
@@ -188,7 +188,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full h-[600px]">
+      <div className="grid mt-20 md:mt-0 grid-cols-1 md:grid-cols-2 w-full h-[600px]">
         {/* image */}
         <div className="bg-blue-800">
           <Image
