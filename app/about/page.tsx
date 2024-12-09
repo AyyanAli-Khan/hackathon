@@ -165,9 +165,11 @@ export default function Page() {
           customer service
         </h1>
 
-        <Button className="text-sm w-full md:text-h5 md:w-44  text-primary bg-muted  font-[300] rounded-none py-3 md:py-[24px] hover:bg-primary hover:text-muted transition-all ease-linear duration-150 px-6 md:px-[32px]">
+       <Link href='/allproductlist'>
+       <Button className="text-sm w-full md:text-h5 md:w-44  text-primary bg-muted  font-[300] rounded-none py-3 md:py-[24px] hover:bg-primary hover:text-muted transition-all ease-linear duration-150 px-6 md:px-[32px]">
           View our products
         </Button>
+       </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2  px-6 py-4 md:px-20 md:py-[60px] gap-4 w-full h-[600px]">

@@ -9,7 +9,7 @@ interface PROPS {
 
 const NewProductCard = ({src, title, price , className}: PROPS) => {
   return (
-    <div className={`mt-6 hover:scale-105 h-fit w-26  md:w-[305px] text-primary md:h-[462px] ${className}`}>
+    <div className={`mt-6 hover:scale-105 transition-all ease-linear duration-200 h-fit w-26  md:w-[305px] text-primary md:h-[462px] ${className}`}>
       <img
         src={src}
         alt="product image"

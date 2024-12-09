@@ -35,7 +35,7 @@ const NewProducts = () => {
       {/* Products Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 items-center">
         {NewProductDetails.map((item, index) => (
-          <Link key={index} href='/productlist'><NewProductCard key={index} src={item.src} title={item.title} price={item.price} /></Link>
+          <Link key={index} href='/product'><NewProductCard key={index} src={item.src} title={item.title} price={item.price} /></Link>
         ))}
       </div>
 

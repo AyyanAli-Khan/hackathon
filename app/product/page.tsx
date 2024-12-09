@@ -58,7 +58,7 @@ export default function Page() {
       price: 250,
     },
     {
-      src: "/images/image left.png",
+      src: "/images/Product Image.png",
       title: "The Dandy chair",
       price: 250,
     },
@@ -152,10 +152,12 @@ export default function Page() {
             <SheetContent side="left" className="p-4">
               <h2 className="text-lg font-clash font-[200] mb-4">Menu</h2>
               <ul className="flex flex-col gap-4">
-                {navLinks.map((item: { name: string }, index: number) => (
-                  <li key={index} className="text-base font-satoshi font-[200]">
+                {navLinks.map((item: { name: string, herf: string }, index: number) => (
+                  <Link href={item.herf} key={index}  >
+                    <li className="text-base font-satoshi font-[200]">
                     {item.name}
                   </li>
+                  </Link>
                 ))}
               </ul>
               <SheetClose asChild>
@@ -172,7 +174,7 @@ export default function Page() {
         {/* <div className='w-full h-[760px] flex items-center p-0 '> */}
         <div className="h-full">
           <Image
-            src="/images/image left.png"
+            src="/images/imageleft.png"
             alt="product image"
             height={1000}
             width={1000}

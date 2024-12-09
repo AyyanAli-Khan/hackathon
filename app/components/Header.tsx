@@ -93,12 +93,14 @@ const Header = () => {
               {/* Mobile Navigation Links */}
               <div className="flex flex-col space-y-4">
                 {navLinks.map((item, index) => (
-                  <h5
-                    key={index}
+                 <Link href={item.herf}
+                 key={index}>
+                   <h5
                     className="cursor-pointer text-base text-[#726E8D] hover:text-black"
                   >
                     {item.name}
                   </h5>
+                 </Link>
                 ))}
               </div>
             </SheetContent>
