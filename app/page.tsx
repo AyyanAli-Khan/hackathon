@@ -17,7 +17,7 @@ export default function Home() {
     <NewProducts />
     <PopularProduct />
     <Signup />
-    {/* <GetInTouch /> */}
+    <GetInTouch />
     <Footer />
    </>
   );

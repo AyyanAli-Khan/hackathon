@@ -28,9 +28,9 @@ const NewProducts = () => {
   ];
 
   return (
-    <div className="w-full h-auto bg-white py-[24px] px-6 md:py-[80px] md:px-[80px]">
+    <div className="w-full h-auto  bg-white py-[24px] px-6 md:px-[80px] md:py-[80px]">
       {/* Heading */}
-      <h2 className="text-h2 text-primary font-clash font-[300] mb-8 md:mb-10">New ceramics</h2>
+      <h2 className="text-h2 text-primary font-clash font-[300] mb-8 md:mb-2">New ceramics</h2>
 
       {/* Products Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 items-center">
@@ -40,7 +40,7 @@ const NewProducts = () => {
       </div>
 
       {/* View Button */}
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-8">
         <ViewButtton />
       </div>
     </div>
