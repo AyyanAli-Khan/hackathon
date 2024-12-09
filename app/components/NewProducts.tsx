@@ -28,7 +28,7 @@ const NewProducts = () => {
   ];
 
   return (
-    <div className="w-full h-auto  bg-white py-[24px] px-6 md:px-[80px] md:py-[80px]">
+    <div className="w-full h-fit  bg-white py-[24px] px-6 md:px-[80px] md:py-[80px]">
       {/* Heading */}
       <h2 className="text-h2 text-primary font-clash font-[300] mb-8 md:mb-2">New ceramics</h2>
 
@@ -40,7 +40,7 @@ const NewProducts = () => {
       </div>
 
       {/* View Button */}
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center md:mt-8">
         <ViewButtton />
       </div>
     </div>

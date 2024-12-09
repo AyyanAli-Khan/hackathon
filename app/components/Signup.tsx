@@ -15,7 +15,7 @@ export default function Signup() {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 h-auto md:h-[56px] w-full md:w-[472px]">
+      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-0 h-fit md:h-[56px] w-full md:w-[472px]">
         <input
           type="text"
           className="border border-gray-300 px-4 py-2 md:py-0 h-[56px] w-full md:w-[80%] rounded-md md:rounded-none focus:outline-none focus:ring-2 focus:ring-primary"

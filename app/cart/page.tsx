@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "@/components/ui/button";
 
-export default function page() {
+export default function Page() {
   return (
     <div>
       <Header />

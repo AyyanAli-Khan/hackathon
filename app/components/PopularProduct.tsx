@@ -5,12 +5,12 @@ import Link from 'next/link'
 
 const PopularProduct = () => {
   return (
-    <section className='w-full h-[744px] px-6 py-6 md:pt-[64px] md:px-[80px]'>
+    <section className='w-full min-h-[744px] px-6 py-6 md:pt-[64px] md:px-[80px]'>
         <h2 className='text-primary text-h4 md:text-h2 font-clash font-[300]'>Our popular products</h2>
 
         {/* <div className='mt-5 flex items-center justify-between '> */}
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 items-center'>
-         <div className='sm:col-span-2'>
+         <div className='col-span-2'>
         <Link href='/productlist'>
         <NewProductCard
              src='/images/large.png' 

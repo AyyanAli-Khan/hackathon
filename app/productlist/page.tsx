@@ -13,7 +13,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 
-export default function page() {
+export default function Page() {
   const navLinks = [
     { name: "Plant pots" },
     { name: "Ceramics" },
