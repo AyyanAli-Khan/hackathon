@@ -12,17 +12,39 @@ import {
   SheetContent,
   SheetClose,
 } from "@/components/ui/sheet";
+import Link from "next/link";
 
 export default function Page() {
   const navLinks = [
-    { name: "Plant pots" },
-    { name: "Ceramics" },
-    { name: "Tables" },
-    { name: "Chairs" },
-    { name: "Crockery" },
-    { name: "Tableware" },
-    { name: "Cutlery" },
+    { name: "Plant pots" ,
+      herf:"/"
+    },
+    { name: "Ceramics"  ,
+      herf:"/"},
+    { name: "Tables"  ,
+      herf:"/"},
+    { name: "Chairs" ,
+      herf:"/" },
+    { name: "Crockery" ,
+      herf:"/" },
+    { name: "Tableware" ,
+      herf:"/" },
+    { name: "Cutlery"  ,
+      herf:"/"},
+      {
+     name:"About page",
+        herf:"/about"
+      },
+      {
+        name:"All Product List Page",
+        herf:"/allproductlist"
+      },
+      {
+        name:"Product Page",
+        herf:"/product"
+      },
   ];
+
 
   const NewProductDetails = [
     {
@@ -66,13 +88,15 @@ export default function Page() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex">
           <ul className="flex gap-[20px] md:gap-[44px]">
-            {navLinks.map((item: { name: string }, index: number) => (
-              <li
-                key={index}
+            {navLinks.map((item: { name: string, herf: string }, index: number) => (
+              <Link href={item.herf} key={index}> 
+                <li
+                
                 className="text-sm md:text-h5 font-satoshi font-[200]"
               >
                 {item.name}
               </li>
+              </Link>
             ))}
           </ul>
         </div>
@@ -149,7 +173,7 @@ export default function Page() {
         <div className="h-full">
           <Image
             src="/images/image left.png"
-            alt="image left"
+            alt="product image"
             height={1000}
             width={1000}
             className="h-full w-full object-cover"
@@ -217,9 +241,11 @@ export default function Page() {
                 Amount: <span className="pl-10">1</span>
               </h6>
 
-              <Button className="text-h5 mt-3 sm:w-full md:w-24 text-white bg-primary  hover:bg-muted font-satoshi font-[300] rounded-none py-[24px] leading-none px-[32px] hover:text-black">
+             <Link href='/cart'>
+             <Button className="text-h5 mt-3 sm:w-full md:w-24 text-white bg-primary  hover:bg-muted font-satoshi font-[300] rounded-none py-[24px] leading-none px-[32px] hover:text-black">
                 Add to Cart
               </Button>
+             </Link>
             </div>
           </div>
         </div>

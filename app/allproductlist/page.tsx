@@ -16,8 +16,8 @@ export default function Page() {
           price: 250,
         },
         {
-          src: '/images/hero image.png',
-          title: 'The Dandy chair',
+          src: '/images/dark chair.png',
+          title: 'The Dark chair',
           price: 250,
         },
         {
@@ -79,8 +79,8 @@ export default function Page() {
         <Header />
       </div>
 
-      <div className="w-full h-52 bg-red-500">
-        <h1 className="font-clash md:text-h1 font-[400]">All Products</h1>
+      <div className="w-full background ">
+        <h1 className="text-center block md:hidden font-clash md:text-h1 font-[400]">All Products</h1>
       </div>
 
       <div className="w-full h-[64px]  px-8 hidden md:flex items-center justify-between">

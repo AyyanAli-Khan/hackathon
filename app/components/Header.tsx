@@ -5,16 +5,37 @@ import React from "react";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
+import { headers } from "next/headers";
 
 const Header = () => {
   const navLinks = [
-    { name: "Plant pots" },
-    { name: "Ceramics" },
-    { name: "Tables" },
-    { name: "Chairs" },
-    { name: "Crockery" },
-    { name: "Tableware" },
-    { name: "Cutlery" },
+    { name: "Plant pots" ,
+      herf:"/"
+    },
+    { name: "Ceramics"  ,
+      herf:"/"},
+    { name: "Tables"  ,
+      herf:"/"},
+    { name: "Chairs" ,
+      herf:"/" },
+    { name: "Crockery" ,
+      herf:"/" },
+    { name: "Tableware" ,
+      herf:"/" },
+    { name: "Cutlery"  ,
+      herf:"/"},
+      {
+     name:"About page",
+        herf:"/about"
+      },
+      {
+        name:"All Product List Page",
+        herf:"/allproductlist"
+      },
+      {
+        name:"Product Page",
+        herf:"/product"
+      },
   ];
 
   return (
@@ -92,12 +113,14 @@ const Header = () => {
       <div className="w-full h-1/2 pb-[20px] hidden md:flex items-center pt-[20px] justify-center">
         <div className="hidden md:flex items-center gap-[40px]">
           {navLinks.map((item, index) => (
-            <h5
-              key={index}
+            <Link href={item.herf} key={index}>
+                <h5
+             
               className="cursor-pointer text-h5 text-[#726E8D]"
             >
               {item.name}
             </h5>
+            </Link>
           ))}
         </div>
       </div>

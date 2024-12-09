@@ -14,13 +14,33 @@ export default function Page() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Plant pots" },
-    { name: "Ceramics" },
-    { name: "Tables" },
-    { name: "Chairs" },
-    { name: "Crockery" },
-    { name: "Tableware" },
-    { name: "Cutlery" },
+    { name: "Plant pots" ,
+      herf:"/"
+    },
+    { name: "Ceramics"  ,
+      herf:"/"},
+    { name: "Tables"  ,
+      herf:"/"},
+    { name: "Chairs" ,
+      herf:"/" },
+    { name: "Crockery" ,
+      herf:"/" },
+    { name: "Tableware" ,
+      herf:"/" },
+    { name: "Cutlery"  ,
+      herf:"/"},
+      {
+     name:"About page",
+        herf:"/about"
+      },
+      {
+        name:"All Product List Page",
+        herf:"/allproductlist"
+      },
+      {
+        name:"Product Page",
+        herf:"/product"
+      },
   ];
 
 
@@ -107,13 +127,15 @@ export default function Page() {
 
                 {/* Mobile Navigation Links */}
                 <div className="flex flex-col space-y-4">
-                  {navLinks.map((item: { name: string }, index: number) => (
-                    <h5
-                      key={index}
-                      className="cursor-pointer text-base text-[#726E8D] hover:text-black"
-                    >
-                      {item.name}
-                    </h5>
+                  {navLinks.map((item: { name: string, herf: string }, index: number) => (
+                     <Link href={item.herf} key={index}>
+                     <h5
+                  
+                   className="cursor-pointer text-h5 text-[#726E8D]"
+                 >
+                   {item.name}
+                 </h5>
+                 </Link>
                   ))}
                 </div>
               </SheetContent>
@@ -127,9 +149,11 @@ export default function Page() {
         <div className="w-full bg-muted h-1/2 pb-[20px] hidden md:flex items-center pt-[20px] justify-center">
           <div className="hidden md:flex items-center gap-[40px]">
             {navLinks.map((item, index) => (
-              <h5 key={index} className="cursor-pointer text-h5 text-[#726E8D]">
+             <Link href={item.herf} key={index}>
+                 <h5 key={index} className="cursor-pointer text-h5 text-[#726E8D]">
                 {item.name}
               </h5>
+             </Link>
             ))}
           </div>
         </div>
@@ -170,7 +194,7 @@ export default function Page() {
         {/* image */}
         <div>
           <Image
-            src="/images/image block.png"
+            src="/images/aboutimage.png"
             alt="image"
             height={1000}
             width={1000}
@@ -179,7 +203,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="grid mt-20 md:mt-0 grid-cols-1 md:grid-cols-2 w-full h-[600px]">
+      <div className="grid overflow-hidden mt-20 md:mt-0 grid-cols-1 md:grid-cols-2 w-full h-[600px]">
         {/* image */}
         <div className="overflow-hidden">
           <Image

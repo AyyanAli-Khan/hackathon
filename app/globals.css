@@ -68,6 +68,16 @@ body {
   }
 }
 
+
+.background{
+  background-image: url('/images/bg.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 208px; 
+  margin: 0;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
