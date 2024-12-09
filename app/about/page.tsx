@@ -1,16 +1,14 @@
 "use client"
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/scrollbar";
-import { Scrollbar } from "swiper/modules";
-// import Scrollbar from "swiper/modules/scrollbar";
 import { Search, X } from "lucide-react";
-// import React from "react";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Features from "../components/Features";
+import Signup from "../components/Signup";
+import Footer from "../components/Footer";
+import ProductListFooter from "../components/ProductListFooter";
 
 export default function Page() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,16 +23,7 @@ export default function Page() {
     { name: "Cutlery" },
   ];
 
-  const categories = [
-    "All products",
-    "Plant pots",
-    "Ceramics",
-    "Tables",
-    "Chairs",
-    "Crockery",
-    "Tableware",
-    "Cutlery",
-  ];
+
 
   return (
     <div>
@@ -146,13 +135,13 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full h-fit px-6  flex items-center flex-col md:flex-row justify-between py-5 md:h-[277px]   md:py-[88px] md:px-[128px]">
-        <h1 className="font-clash w-[704px] text-primary md:text-h1 font-[300]">
+      <div className="w-full h-fit px-6  flex items-center flex-col md:flex-row justify-between py-5 md:h-[277px] gap-14  md:gap-0  md:py-[88px] md:px-[128px]">
+        <h1 className="font-clash w-full text-h2 md:w-[704px] text-primary md:text-h1 font-[300]">
           A brand built on the love of craftmanship, quality and outstanding
           customer service
         </h1>
 
-        <Button className="text-sm md:text-h5 text-primary bg-muted  font-[300] rounded-none py-3 md:py-[24px] hover:bg-primary hover:text-muted transition-all ease-linear duration-150 px-6 md:px-[32px]">
+        <Button className="text-sm md:text-h5  text-primary bg-muted  font-[300] rounded-none py-3 md:py-[24px] hover:bg-primary hover:text-muted transition-all ease-linear duration-150 px-6 md:px-[32px]">
           View our products
         </Button>
       </div>
@@ -221,6 +210,19 @@ export default function Page() {
       </div>
 
       </div>
+
+      <div className="mt-10">
+        <Features />
+      </div>
+
+      <div className="mb-10">
+        <Signup />
+      </div>
+
+      <div>
+        <ProductListFooter />
+      </div>
+            
     </div>
   );
 }
