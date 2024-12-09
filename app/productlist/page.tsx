@@ -49,35 +49,7 @@ export default function page() {
 
   return (
     <div>
-      {/* <div className='w-full h-[41px] text-white bg-primary flex items-center justify-center'>
-            <h6 className='text-h6 font-satoshi font-[200]'>Free delivery on all orders over £50 with code easter checkout</h6>
-            <span className='absolute right-5'>X</span>
-
-
-
-        </div>
-
-        <nav className='py-[25px] px-[80px] flex items-center justify-between'>
-            <div>
-                <h1 className='text-h3 font-clash font-[200]'>Avino</h1>
-            </div>
-            <div>
-                <ul className='flex gap-[44px]'>
-                {
-                    navLinks.map((item: {name: string} , index: number) =>(
-                        <li className='text-h5 font-satoshi font-[200]'>{item.name}</li>
-                    ))
-                }
-                </ul>
-            </div>
-            
-            <div className='flex gap-[16px]'>
-                <img src="/icons/search.png" alt="search"  className='h-[16px] w-[16px]' />
-                <img src="/icons/shoping-cart.png" alt="shoping-cart"  className='h-[16px] w-[16px]' />
-                <img src="/icons/user-avatar.png" alt="user avatar"  className='h-[16px] w-[16px]' />
-            </div>
-        </nav> */}
-
+    
       <div className="w-full h-[41px] text-white bg-primary flex items-center justify-center relative">
         <h6 className="text-xs md:text-h6 font-satoshi font-[200] text-center">
           Free delivery on all orders over £50 with code easter checkout
@@ -172,7 +144,7 @@ export default function page() {
         </div>
       </nav>
 
-      <div className="w-full h-fit md:h-[760px] grid md:grid-cols-2 grid-cols-1 p-0 ">
+      <div className="w-full h-fit min-md:h-[760px] grid md:grid-cols-2 grid-cols-1 p-0 ">
         {/* <div className='w-full h-[760px] flex items-center p-0 '> */}
         <div className="h-full">
           <Image
@@ -253,8 +225,8 @@ export default function page() {
         </div>
       </div>
 
-      <div className="w-full h-auto bg-white py-[24px] px-6 md:py-[80px] md:px-[80px]">
-      <h2 className="text-h2 text-primary font-clash font-[300] mb-8 md:mb-10">New ceramics</h2>
+      <div className="w-full h-auto  py-[24px] px-6 md:py-[80px] md:px-[80px]">
+      <h2 className="text-h2 text-primary font-clash font-[300] mb-8 md:mb-0">New ceramics</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 items-center">
         {/* <div className="flex items-center justify-between"> */}
           {NewProductDetails.map(

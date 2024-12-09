@@ -7,16 +7,16 @@ export default function page() {
   return (
     <div>
         <Header />
-        <div className='w-full md:h-fit md:px-[64px] md:py-[188px] bg-muted'>
+        <div className='w-full md:h-fit md:py-[64px] md:px-[188px] bg-muted'>
             <h1 className='text-h1 font-clash font-[300]'>Your shopping cart</h1>
-            <div className='grid md:grid-cols-5 md:mt-10 items-center'>
-                <div className='col-span-3 md:hidden '>
+            <div className='grid md:grid-cols-5 md:gap-x-52 w-full md:mt-10 items-center'>
+                <div className='col-span-3 hidden md:block '>
                     <h6 className='text-h6 font-clash font-[200]'>Product</h6>
                 </div>
-                <div className='md:hidden'>
+                <div className='hidden md:block'>
                     <h6 className='text-h6 font-clash font-[200]'>Quantity</h6>
                 </div>
-                <div className='md:hidden'>
+                <div className='hidden md:block '>
                     <h6 className='text-h6 font-clash font-[200]'>Total</h6>
                 </div>
     
@@ -83,12 +83,12 @@ export default function page() {
 
             </div>
 
-            <div className='w-full h-fit mb-10 flex items-end  justify-end'>
-                <div className='w-fit h-fit justify-start md:mr-48 md:pt-10'>
+            <div className='w-full  h-fit mb-10 flex md:mt-[28px]    justify-end'>
+                <div className='w-fit md:ml-auto text-right  h-fit justify-start'>
                     <h4 className='text-primary text-h4 font-clash font-[200]'>Subtotal &nbsp;&nbsp; <span className='text-black font-[300]'>£85</span> </h4>
                     <p className='text-primary font-satoshi font-[200] text-h6'>Taxes and shipping are calculated at checkout</p>
-                    <Button className="text-h5 text-white bg-primary hover:bg-secondary hover:text-gray-500 mt-3 md:mt-6 font-[300] rounded-none py-[24px] leading-none px-[32px]">
-        View Collection
+                    <Button className="text-h5 text-white bg-primary hover:bg-secondary hover:text-white mt-3 md:mt-6 font-[300] rounded-none py-[24px] leading-none px-[32px]">
+                    Go to checkout
       </Button>
                 </div>
             </div>
