@@ -141,27 +141,27 @@ export default function Page() {
           customer service
         </h1>
 
-        <Button className="text-sm md:text-h5  text-primary bg-muted  font-[300] rounded-none py-3 md:py-[24px] hover:bg-primary hover:text-muted transition-all ease-linear duration-150 px-6 md:px-[32px]">
+        <Button className="text-sm w-full md:text-h5 md:w-44  text-primary bg-muted  font-[300] rounded-none py-3 md:py-[24px] hover:bg-primary hover:text-muted transition-all ease-linear duration-150 px-6 md:px-[32px]">
           View our products
         </Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2  px-6 py-4 md:px-20 md:py-[60px] gap-4 w-full h-[600px]">
         {/* text */}
-        <div className="p-16 bg-primary flex flex-col  md:justify-between">
+        <div className="md:p-16 px-8 py-7  bg-primary flex flex-col  md:justify-between">
           <div className="text-white gap-3">
-            <h1 className="font-clash font-[300] md:text-h1 ">
+            <h1 className="font-clash font-[300] text-h4 md:text-h1 ">
               It started with a small idea
             </h1>
 
-            <p className="font-satoshi w-[80%] font-[200] md:text-large">
+            <p className="font-satoshi w-[80%] font-[200] text-h6 md:text-large">
               A global brand with local beginnings, our story begain in a small
               studio in South London in early 2014
             </p>
           </div>
 
           <div>
-            <Button className="text-h5 text-white bg-[#F9F9F926] font-satoshi hover:bg-accent hover:text-black  font-[300] rounded-none py-[24px] leading-none px-[32px]">
+            <Button className="text-h5 md:w-44  mt-10 w-full md: md:mt-0 text-white bg-[#F9F9F926] font-satoshi hover:bg-accent hover:text-black  font-[300] rounded-none py-[24px] leading-none px-[32px]">
               View Collection
             </Button>
           </div>
@@ -181,13 +181,13 @@ export default function Page() {
 
       <div className="grid mt-20 md:mt-0 grid-cols-1 md:grid-cols-2 w-full h-[600px]">
         {/* image */}
-        <div className="bg-blue-800">
+        <div className="overflow-hidden">
           <Image
-            src="/images/image.png"
+            src="/images/aboutbottom.png"
             alt="image"
             height={1000}
             width={1000}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center"
           />
         </div>
         {/* text */}
