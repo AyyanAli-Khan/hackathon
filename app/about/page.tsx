@@ -45,6 +45,8 @@ export default function Page() {
         <span className="absolute right-4 md:right-5 cursor-pointer">X</span>
       </div>
 
+
+    {/* nav  */}
       <div className="w-full h-fit md:h-[134px] py-[30px] px-[28px]">
         {/* Top Section */}
         <div className="w-full h-1/2 pb-[20px] flex justify-between items-center">
@@ -144,7 +146,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full h-fit px-6  flex items-center justify-between py-5 md:h-[277px]   md:py-[88px] md:px-[128px]">
+      <div className="w-full h-fit px-6  flex items-center flex-col md:flex-row justify-between py-5 md:h-[277px]   md:py-[88px] md:px-[128px]">
         <h1 className="font-clash w-[704px] text-primary md:text-h1 font-[300]">
           A brand built on the love of craftmanship, quality and outstanding
           customer service
@@ -170,7 +172,7 @@ export default function Page() {
           </div>
 
           <div>
-            <Button className="text-h5 text-white bg-[#F9F9F926] font-satoshi hover:bg-accent  font-[300] rounded-none py-[24px] leading-none px-[32px]">
+            <Button className="text-h5 text-white bg-[#F9F9F926] font-satoshi hover:bg-accent hover:text-black  font-[300] rounded-none py-[24px] leading-none px-[32px]">
               View Collection
             </Button>
           </div>
@@ -200,7 +202,7 @@ export default function Page() {
           />
         </div>
         {/* text */}
-        <div className="h-full text-left w-full md:w-1/2 pt-[40px] md:pt-[72px] px-6 md:px-[84px] flex flex-col justify-between">
+        <div className="h-full text-left w-full  pt-[40px] md:pt-[72px] px-6 md:px-[84px] flex flex-col justify-between">
         <div>
           <h3 className="text-h3 font-clash font-[300] text-primary">
           Our service isn’t just personal, it’s actually
@@ -212,7 +214,7 @@ export default function Page() {
         </div>
 
         <div>
-          <Button className="font-satoshi mt-8 md:mb-[54px] bg-muted rounded-none font-[300] text-h5 hover:bg-destructive py-5 px-8 w-full md:w-auto">
+          <Button className="font-satoshi text-primary mt-8 md:mb-[54px] bg-muted rounded-none font-[300] text-h5 hover:bg-destructive py-5 px-8 w-full md:w-auto">
             Get in touch
           </Button>
         </div>
