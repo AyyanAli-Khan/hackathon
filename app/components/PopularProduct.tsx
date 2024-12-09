@@ -13,7 +13,7 @@ const PopularProduct = () => {
          <div className='col-span-2'>
         <Link href='/productlist'>
         <NewProductCard
-             src='/images/large.png' 
+             src='/images/Large.png' 
              title='The Poplar suede sofa' price={980}
              className='md:w-fit'
              />
